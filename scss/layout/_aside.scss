@@ -1,0 +1,32 @@
+@use '../abstract/variables';
+
+.sidebar {
+  grid-area: sidebar;
+  background: variables.$bg-main;
+  padding: 0px 7px;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  
+  li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: variables.$color-primary;
+
+    padding: 0px 0px;
+    // margin-bottom: 11px;
+    border-radius: 6px;
+
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3%;
+    line-height: 100%;
+
+    transition: all 0.2s ease;
+  }
+}
