@@ -1,4 +1,5 @@
-# scss/**/*.scss
+.env
 css/style.css
 css/style.css.map
-.env
+css/*.css
+css/*.css.map
