@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("../assets/fonts/Satoshi-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../assets/fonts/Satoshi-Medium.woff2") format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Satoshi";
+  src: url("../assets/fonts/Satoshi-Bold.woff2") format("woff2");
+  font-weight: 700;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Satoshi", sans-serif;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-style: inherit;
+  color: inherit;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background: #060606;
+}
+.sidebar nav {
+  padding: 3px 7px 7px 7px;
+}
+.sidebar ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  margin-top: 11px;
+  margin-left: 11px;
+}
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #898989;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 3%;
+  line-height: 100%;
+  transition: all 0.2s ease;
+}
+
+.icon-box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-box .icon {
+  max-width: 40px;
+  max-height: 40px;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  grid-template-rows: 70px 1fr;
+  grid-template-areas: "sidebar header" "sidebar main";
+  height: 100vh;
+  background-color: #060606;
+}
+
+/*# sourceMappingURL=style.css.map */
