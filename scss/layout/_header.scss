@@ -10,13 +10,18 @@ nav.left-icons ul {
         align-items: center;
     }
 }
+.left-icons a {
+  display: flex;
+  align-items: center;
+  gap: 20.1px;
+}
 .right-icons ul {
      list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     align-items: center;  
-    gap: 13px;    
+    gap: 22.33px;    
 }
 .left-icons a ,
 .right-icons a  {
@@ -36,4 +41,29 @@ nav.left-icons ul {
     align-items: center; 
     padding: 10px 20px;
     background-color: variables.$bg-main;
+}
+nav.left-icons li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    height: 54px;
+    width: 210px;
+    a{
+        margin-left: 15px;
+        margin-top: 6.79px;
+        margin-bottom: 6.79px;
+    }
+}
+.search{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    height: 54px;
+    width: 350px;
+    padding: 6px 12px; 
+}
+.active {
+    background-color: #111111;
 }
