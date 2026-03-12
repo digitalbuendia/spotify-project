@@ -1,0 +1,55 @@
+@use '../abstract/variables';
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 11px;
+}
+
+.card {
+  max-width: 170px;
+  max-height: 253px;
+  color: variables.$color-primary;
+  line-height: 100%;
+  letter-spacing: 3%;
+
+  .artwork-img {
+    max-width: 170px;
+    max-height: 170px;
+    border-radius: 5%;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    h4, data { display: inline-block; }
+    h4 { font-weight: 500; }
+  }
+  .metadata{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    p {
+      align-items: center;
+      font-weight: 400;
+      font-size: 12px;
+      overflow-wrap: break-word;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  }
+  .artist-img {
+  // @extend .artwork-img;
+  max-width: 170px;
+  max-height: 170px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+}
+.card:hover{
+  background-color: variables.$bg-active-tab;
+  border-radius: 5%
+}
+

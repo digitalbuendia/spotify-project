@@ -5,6 +5,8 @@
 @use './layout/header';
 @use './layout/main';
 @use './components/icon';
+@use './components/card';
+@use './pages/home';
 
 .app {
   display: grid;

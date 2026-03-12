@@ -1,2 +1,19 @@
 @use '../abstract/variables';
 
+.mixes {
+  margin-left: 25px;
+  margin-right: 25px;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 1fr);
+  gap: 30px;
+}
+.section-title{
+  color: variables.$main-primary;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 3%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
