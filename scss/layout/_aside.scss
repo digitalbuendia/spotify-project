@@ -26,5 +26,8 @@
 
       transition: all 0.2s ease;
     }
+    li a:hover{
+      filter: brightness(150%);
+    }
   }
 }
