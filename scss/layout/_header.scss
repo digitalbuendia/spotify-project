@@ -6,13 +6,12 @@
     justify-content: space-between;
     align-items: center; 
     background-color: variables.$bg-main;
-    padding: 0 clamp(12px, 2vw, 32px);
 }
 .left-icons {
+    margin-left: 18px;
     ul{
-        display: flex;
-        align-items: center;
-        margin-left: clamp(16px, 2vw, 32px);
+        grid-template-columns: repeat(4,minmax(210px, 0.725fr));
+        display: grid;
     li a {
         display:flex;
         align-items: center;
@@ -23,11 +22,8 @@
         align-items: center;
         gap: 10px;
         border-radius: 10px;
-        height: 54px;
-        min-width: 210px;
-        padding-left: 15px;
     a{
-        margin-left: 15px;
+        margin-left: 10px;
         margin-top: 6.79px;
         margin-bottom: 6.79px;
     }
@@ -60,6 +56,9 @@
     width: clamp(220px, 25vw, 350px);
     padding: 6px 12px; 
 }
+// .library{
+//     width:clamp(130px, 15vw, 262px);
+// }
 .active {
     background-color: #111111;
 }
