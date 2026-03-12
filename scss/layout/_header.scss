@@ -1,57 +1,54 @@
 @use "../abstract/variables";
-nav.left-icons ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center; 
-    li a {
-        display:flex;
-        align-items: center;
-    }
-}
-.left-icons a {
-  display: flex;
-  align-items: center;
-  gap: 20.1px;
-}
-.right-icons ul {
-     list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    align-items: center;  
-    gap: 22.33px;    
-}
-.left-icons a ,
-.right-icons a  {
-    transition: 0.2s ease;  
-}
-.left-icons a:hover  {
-    filter: brightness(1.5); 
-}
-.right-icons {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: start;
-}
 .topbar {
+    color: variables.$color-primary;
+    grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center; 
     background-color: variables.$bg-main;
+    padding: 0 clamp(12px, 2vw, 32px);
 }
-nav.left-icons li{
+.left-icons {
+        ul{
     display: flex;
+    align-items: center;
+    margin-left: clamp(16px, 2vw, 32px);
+        li a {
+        display:flex;
+        align-items: center;
+    }
+    }
+        li {
+        display: flex;
     align-items: center;
     gap: 10px;
     border-radius: 10px;
     height: 54px;
-    width: 210px;
-    a{
+    min-width: 210px;
+    padding-left: 15px;
+        a{
         margin-left: 15px;
         margin-top: 6.79px;
         margin-bottom: 6.79px;
+    }
+    }
+        a {
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease;  
+    gap: 20.1px;
+    }
+    a:hover{
+    filter: brightness(1.5); 
+    }
+}
+.right-icons {
+    display: flex;
+    justify-content: end;
+        ul{
+    display: flex;
+    align-items: center; 
+    gap: clamp(12px, 1.5vw, 22px);  
     }
 }
 .search{
@@ -60,7 +57,7 @@ nav.left-icons li{
     gap: 10px;
     border-radius: 10px;
     height: 54px;
-    width: 350px;
+    width: clamp(220px, 25vw, 350px);
     padding: 6px 12px; 
 }
 .active {
