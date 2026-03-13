@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" sizes="32x32" type="image/png" href="./assets/icons/spotify-icon.png">
+</head>
+<body>
+  <div class="app">
+    <!-- Dunk works on header -->
+    <header class="topbar">
+      <nav class="left-icons">  
+        <ul>
+          <li class="library active">
+            <a href="library.html">
+              <img class="icon" src="./assets/icons/header/Name=Library, Filled=No.svg" alt="Library">   
+                <span>Library</span>
+            </a>
+          </li>
+          <li class="home">
+            <a  href="home.html">
+              <img class="icon" src="./assets/icons/header/Name=Home, Filled=Yes.svg" alt="Home">
+                <span><a href="index.html">Home</a></span>
+              </a>
+            </li>
+          <li class="discover">
+            <a href="discover.html">
+              <img class="icon" src="./assets/icons/header/Name=Discover, Filled=No.svg" alt="Discover">
+                <span>Discover</span>
+              </a>
+          </li>
+          <li class="search" >
+            <a href="search.html">
+              <img class="icon" src="./assets/icons/header/Name=Search, Filled=No.svg" alt="Search">
+                <span>Search</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    <div class="right-icons">
+      <ul>
+        <li>
+          <a href="Notification.html">
+            <img class="icon" src="./assets/icons/header/Name=News, Filled=No.svg" alt="news">
+          </a>
+        </li>
+        <li>
+          <a href="lock.html">
+            <img class="icon" src="./assets/icons/header/Name=Private, Filled=No.svg" alt="Lock">
+          </a>
+        </li>
+        <li>
+          <a href="friends.html">
+            <img class="icon" src="./assets/icons/header/Name=Friends, Filled=No.svg" alt="friends">
+          </a>
+        </li>
+        <li>
+          <a href="settings.html">
+            <img class="icon" src="./assets/icons/header/Name=Settings, Filled=No.svg" alt="settings">
+          </a>
+        </li>
+        <li>
+          <a href="profile.html">
+            <img class="profile" src="./assets/icons/profile.png" alt="profile">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+    <!-- Egg works on sidebar -->
+    <aside class="sidebar">
+      <nav>
+        <ul>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Pin.svg" alt="Pins" class="icon"></div>
+              <span>Pins</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Playlist.svg" alt="Playlists" class="icon"></div>
+              <span>Playlists</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Like.svg" alt="Liked Songs" class="icon"></div>
+              <span>Liked Songs</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Save.svg" alt="Saved" class="icon"></div>
+              <span>Saved</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Album.svg" alt="Albums" class="icon"></div>
+              <span>Albums</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Folder.svg" alt="Folders" class="icon"></div>
+              <span>Folders</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Podcast.svg" alt="Podcats" class="icon"></div>
+              <span>Podcasts</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Audiobook.svg" alt="Audiobooks" class="icon"></div>
+              <span>Audiobooks</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="icon-box"><img src="./assets/icons/sidebar/Property 1=Artist.svg" alt="Artists" class="icon"></div>
+              <span>Artists</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+  
+    <!-- Egg works on sidebar -->
+    <main class="main">
+      <div class="favorite-playlists">
+        <div class="card-container">
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/Abbey Road.png" alt="Abbey Road Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Abbey Road</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/OK Computer.png" alt="OK Computer Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>OK Computer</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/In Rainbows.png" alt="In Rainbows Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>In Rainbows</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/KID A.png" alt="KID A Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Kid A</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/Random Access Memories.png" alt="Random Access Memories Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Random Access Memories</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/Paranoid Android.png" alt="Paranoid Android Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Paranoid Android</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>I may be paranoid, but no android</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/Temple Pharmacy.png" alt="Temple Pharmacy Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Temple Pharmacy</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/currents.png" alt="Currents Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Currents</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/FALL OFF.png" alt="Fall Off Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Fall Off</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/big steppers and mr.morale.png" alt="Big Steppers and Mr.Morale Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Big Steppers and Mr.Morale</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/DAMN.png" alt="DAMN Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>DAMN</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/DAMN bw.png" alt="DAMN DELUXE Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>DAMN DELUXE</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/Deadbeat.png" alt="Deadbeat Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>Deadbeat</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+          <article class="card">
+            <figure class="artwork-wrapper">
+              <img src="./assets/covers/gkmc deluxe.png" alt="Good Kid m.A.A.d city Cover" class="artwork-img">
+            </figure>
+            
+            <section class="metadata">
+              <header class="title">
+                <h4>good kid m.A.A.d city</h4>
+                <data value="50" class="track-count">50</data> 
+              </header>
+              <p>Some Description.</p>
+            </section>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <!-- Dunk works on header -->
+    <footer class="player"></footer>
+  </div>
+</body>
+</html>
