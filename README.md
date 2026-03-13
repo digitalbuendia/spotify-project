@@ -1,12 +1,12 @@
 # Spotify App
 
 ## Project Overview
-მოკლე აღწერა პროექტზე — რა ააწყვეთ და რა არის მისი მიზანი.
+ავაწყეთ basic დიზაინი Spotify-ს აპლიკაციისა (რეკლამების გარეშე)
 
 ## Team Contributions
 | Team Member | Owned Scope |
 |------------|-------------|
-| გიორგი | Sidebar, Home Page, Sidebar |
+| გიორგი | Sidebar, Home Page |
 | ანდრია | Header, Player |
 
 ## Team Decisions
