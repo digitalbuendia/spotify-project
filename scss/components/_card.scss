@@ -15,9 +15,11 @@
   letter-spacing: 3%;
 
   .artwork-img {
-    max-width: 170px;
-    max-height: 170px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
     border-radius: 5%;
+    object-fit: cover;
+    transition: all 0.3s ease;
   }
   .title {
     display: flex;
@@ -42,11 +44,10 @@
     }
   }
   .artist-img {
-  // @extend .artwork-img;
-  max-width: 170px;
-  max-height: 170px;
-  border-radius: 50%;
-  object-fit: cover;
+    max-width: 170px;
+    max-height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
   }
   transition: all 0.2s ease;
 }
@@ -54,7 +55,9 @@
   background-color: variables.$bg-active-tab;
   border-radius: 5%;
   border-color: variables.$color-primary;
-  box-shadow: 0 0.75em 0.75em -0.4em variables.$color-secondary;
-  transform: translateY(-0.25em);
+  .artwork-img {
+    transform: translateY(-0.25em);
+  }
+  // box-shadow: 0 0.75em 0.75em -0.4em variables.$color-secondary;
   cursor: pointer;
 }

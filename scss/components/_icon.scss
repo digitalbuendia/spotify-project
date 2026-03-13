@@ -4,11 +4,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  .icon {
-    max-width: 40px;
-    max-height: 40px;
-  }
+}
+.icon {
+  max-width: 40px;
+  max-height: 40px;
+}
+.icon-sm {
+  width: 20px;
+  height: 20px;
 }
 .profile{
   width: 32px;
